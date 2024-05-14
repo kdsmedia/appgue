@@ -29,7 +29,7 @@ def getMessage():
 @server.route('/')
 def webhook():
     bot.remove_webhook()
-    bot.set_webhook(url='https://file-free-1a0aeb10e984.herokuapp.com/'+TOKEN)
+    bot.set_webhook(url='https://file-free-1a0aeb10e984.herokuapp.com'+TOKEN)
     return 'ok webhook sudah terpasang !', 200
 
 if __name__ == '__main__':
